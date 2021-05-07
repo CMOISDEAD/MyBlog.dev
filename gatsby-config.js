@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: "https://radiant-scrubland-81376.herokuapp.com/",
         contentTypes: [
           // Lista de tipos de contenido que tenemos en Strapi, en singular
           "articulo"
