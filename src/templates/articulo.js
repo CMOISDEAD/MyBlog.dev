@@ -4,8 +4,15 @@ import Layout from "../components/layout"
  
 const ArticleTemplate = ({ data }) => (
   <Layout>
-    <h1>{data.strapiArticulo.titulo}</h1>
-    <p>{data.strapiArticulo.descripcion}</p>
+    <div className="mt-5 container">
+      <div className="title text-center">
+        <h1>{data.strapiArticulo.titulo}</h1>
+      </div>
+      <br/>
+      <div className="text-start ">
+        <p>{data.strapiArticulo.descripcion}</p>
+      </div>
+    </div>
   </Layout>
 )
  
