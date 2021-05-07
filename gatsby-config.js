@@ -6,6 +6,17 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "http://localhost:1337",
+        contentTypes: [
+          // Lista de tipos de contenido que tenemos en Strapi, en singular
+          "articulo"
+        ],
+        queryLimit: 1000,
+      },
+     },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
