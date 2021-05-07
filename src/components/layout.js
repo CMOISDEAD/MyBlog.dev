@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Sidebar from "./Sidebar"
+//import Sidebar from "./Sidebar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -28,11 +28,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <main className="row mx-auto">
-          <div className="col-2 west-side">
-            <Sidebar/>
-          </div>
-          <div className="col east-side">
+        <main>
             {children}
           </div>
         </main>
