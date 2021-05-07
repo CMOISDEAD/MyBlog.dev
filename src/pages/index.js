@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
               <div className="col-md-8">
                 <div className="card-body">
                   <h5 className="card-title">{node.titulo}</h5>
-                  <p className="card-text">{node.descripcion}</p>
+                  <p className="card-text">Sit ab nisi itaque consequatur sint Numquam ad voluptatum molestias consectetur voluptates reprehenderit ducimus consequatur? Et voluptatem consectetur pariatur non asperiores. Incidunt cumque sequi inventore itaque quos perspiciatis unde ratione.</p>
                   <Link to={`/${node.strapiId}`} className="btn btn-primary">
                     {"Leer ->"}
                   </Link>
