@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
       <div>
         <main>
             {children}
-          </div>
         </main>
         <footer className="footer bg-light text-muted text-center">
           © {new Date().getFullYear()}, Built with Love {"&"}
