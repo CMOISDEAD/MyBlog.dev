@@ -1,15 +1,20 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
  
 const ArticleTemplate = ({ data }) => (
   <Layout>
     <div className="mt-5 container">
-      <div className="title text-center">
-        <h1>{data.strapiArticulo.titulo}</h1>
+      <div className="title d-block">
+        <div className="header ">
+        <Link to="/" className="btn btn-primary text-start">
+          {"<-"} Volver? 
+        </Link>
+        <h1 className="text-center">{data.strapiArticulo.titulo}</h1>
+        </div>
       </div>
       <br/>
-      <div className="text-start ">
+      <div className="text-start">
         <p>{data.strapiArticulo.descripcion}</p>
       </div>
     </div>

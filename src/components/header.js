@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           className="navbar-brand"
         >
-          {siteTitle}
+          {`<${siteTitle}/>`}
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -21,11 +21,11 @@ const Header = ({ siteTitle }) => (
               <a className="nav-link active" aria-current="page" href="/blog">Blog</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/more">Portafolio</a>
+              <a className="nav-link" href="https://dropdeaddev.netlify.app/" target="_blank">Portafolio</a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="/about">About</a>
-            </li>
+            </li> */}
           </ul>
           <span className="navbar-text">
             Choose life.

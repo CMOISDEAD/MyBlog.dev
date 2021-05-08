@@ -28,10 +28,10 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
-        <main>
+        <main className="mt-5">
             {children}
         </main>
-        <footer className="footer bg-light text-muted text-center">
+        <footer className="footer bg-light text-muted text-center mt-5">
           © {new Date().getFullYear()}, Built with Love {"&"}
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>

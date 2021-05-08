@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Iosevka";
+  src: url("../fonts/Iosevka\ Nerd\ Font\ Complete.ttf");
+}
+*{
+  font-family: "Iosevka";
+}
+
 /* html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
